@@ -14,7 +14,7 @@ class Point(BaseModel):
          # Переводим градусы в радианы
         phi1 = math.radians(self.latitude)
         phi2 = math.radians(b_point.latitude)
-        dph1 = math.radians(b_point.longitude- self.latitude)
+        dph1 = math.radians(b_point.latitude - self.latitude)
         dlambda = math.radians(b_point.longitude - self.longitude)
 
         a = math.sin(dph1 / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
