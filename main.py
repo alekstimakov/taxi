@@ -1,15 +1,15 @@
 import requests
-
-host = "http://router.project-osrm.org/"
+from core.models import Point
+host = "https://router.project-osrm.org/"
 service = "route"
 version = "v1"
 profile = "driving"
 
 # координаты: Долгота, широта
-kazan_cathedral = "30.323885,59.934214"
-winter_palace = "30.313621,59.939763"
+kazan_cathedral = Point(longitude=30.32388asd, latitude=59.934214)
+winter_palace = Point(longitude=30.313621, latitude=59.939763)
 
-coordinates = f"{kazan_cathedral};{winter_palace}"
+coordinates = f"{kazan_cathedral.latitude},{kazan_cathedral.latitude};{winter_palace.latitude},{winter_palace.longitude}"
 
 
 url = f"{host}/{service}/{version}/{profile}/{coordinates}?overview=full&geometries=geojson"
