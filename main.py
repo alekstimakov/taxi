@@ -6,7 +6,7 @@ version = "v1"
 profile = "driving"
 
 # координаты: Долгота, широта
-kazan_cathedral = Point(longitude=30.32388asd, latitude=59.934214)
+kazan_cathedral = Point(longitude=30.32388, latitude=59.934214)
 winter_palace = Point(longitude=30.313621, latitude=59.939763)
 
 coordinates = f"{kazan_cathedral.latitude},{kazan_cathedral.latitude};{winter_palace.latitude},{winter_palace.longitude}"
