@@ -67,3 +67,6 @@ class Order(BaseModel):
     def distance(self) -> float:
         """Вычисляет расстояние между двумя точками в километрах"""
         return self.point_a - self.point_b
+
+
+class Car
